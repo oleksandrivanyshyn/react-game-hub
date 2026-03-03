@@ -13,7 +13,7 @@ import { SiNintendo } from 'react-icons/si';
 import { BsGlobe } from 'react-icons/bs';
 import type { IconType } from 'react-icons';
 
-import type { Platform } from '../entities/Platform.ts';
+import type Platform from '../entities/Platform';
 
 interface PlatformIconListProps {
   platforms: Platform[];

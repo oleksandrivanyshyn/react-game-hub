@@ -1,8 +1,8 @@
-import type { Platform } from './Platform.ts';
-import type { Genre } from './Genre.ts';
-import type { Publisher } from './Publisher.ts';
+import type Platform from './Platform';
+import type Genre from './Genre';
+import type Publisher from './Publisher';
 
-export interface Game {
+export default interface Game {
   id: number;
   name: string;
   background_image: string;

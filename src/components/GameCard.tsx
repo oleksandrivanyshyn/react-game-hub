@@ -4,7 +4,7 @@ import CriticScore from './CriticScore.tsx';
 import getCroppedImageUrl from '../services/image-url.ts';
 import Emoji from './Emoji.tsx';
 import { Link } from 'react-router';
-import type { Game } from '../entities/Game.ts';
+import type Game from '../entities/Game';
 interface GameCardProps {
   game: Game;
 }
