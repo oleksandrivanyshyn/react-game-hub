@@ -3,7 +3,7 @@
 
 A modern, responsive frontend web application for discovering and exploring video games. Built with React and TypeScript, it leverages the RAWG Video Games Database API to provide a rich catalog of games, complete with searching, filtering, and detailed game data.
 
-🔗 **Live Demo:** [Open App (Vercel)](https://react-game-jnncata5u-oleksandrivanyshyns-projects.vercel.app/)
+🔗 **Live Demo:** [Open App (Vercel)](https://react-game-hub-eight-tau.vercel.app/)
 
 ## 🛠 Tech Stack
 
