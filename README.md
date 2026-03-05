@@ -1,73 +1,70 @@
-# React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# 🎮 React Game Hub
 
-Currently, two official plugins are available:
+A modern, responsive frontend web application for discovering and exploring video games. Built with React and TypeScript, it leverages the RAWG Video Games Database API to provide a rich catalog of games, complete with searching, filtering, and detailed game data.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🔗 **Live Demo:** [Open App (Vercel)](https://react-game-hub-eight-tau.vercel.app/)
 
-## React Compiler
+## 🛠 Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+**Frontend:**
+- **React 19** (UI Library)
+- **TypeScript** (Static typing)
+- **Vite** (Build tool & development server)
+- **Chakra UI** (Component library & styling)
+- **React Query** (Data fetching, caching, and infinite scrolling)
+- **Zustand** (Global state management)
+- **React Router** (Routing and navigation)
 
-## Expanding the ESLint configuration
+**Third-Party Services:**
+- **RAWG API** (Video game database backend)
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 🚀 Getting Started
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+Since this is a standalone frontend application, setting it up locally is quick and straightforward. 
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+### 🛠️ Local Development Setup
+
+1. **Clone the repository:**
+```bash
+git clone [https://github.com/oleksandrivanyshyn/react-game-hub.git](https://github.com/oleksandrivanyshyn/react-game-hub.git)
+cd react-game-hub
+
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+2. **Install dependencies:**
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+```bash
+npm install
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
 ```
+
+3. **Run the development server:**
+
+```bash
+npm run dev
+
+```
+
+4. **Access the App:**
+
+* Open [http://localhost:5173](https://www.google.com/search?q=http://localhost:5173) in your browser.
+
+---
+
+## 📂 Project Highlights
+
+### ✅ Architecture & Quality
+
+* **Modular Design:** Clean separation of API client logic, global state (`store.ts`), custom hooks, and discrete UI components.
+* **Type Safety:** Comprehensive TypeScript interfaces for all API entities (Games, Genres, Platforms, Trailers, Screenshots).
+* **Modern Tooling:** Fast Hot Module Replacement (HMR) and highly optimized production builds via Vite.
+
+### 🖼 Features
+
+* **Advanced Filtering & Sorting:** Filter games by platform and genre, and sort by relevance, date, or rating using Zustand for seamless state management.
+* **Optimized Data Fetching:** Smooth infinite scrolling and request caching powered by TanStack React Query to minimize unnecessary API calls.
+* **Rich Media & Details:** Dynamic rendering of game trailers, screenshot galleries, metacritic scores, and expandable text descriptions.
+* **Responsive Theme:** Built-in Dark/Light mode toggle powered by Chakra UI.
