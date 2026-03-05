@@ -1,4 +1,3 @@
-
 # 🎮 React Game Hub
 
 A modern, responsive frontend web application for discovering and exploring video games. Built with React and TypeScript, it leverages the RAWG Video Games Database API to provide a rich catalog of games, complete with searching, filtering, and detailed game data.
@@ -41,14 +40,24 @@ npm install
 
 ```
 
-3. **Run the development server:**
+3. **Set up environment variables:**
+Create a `.env` file in the root of your project and add your RAWG API key:
+
+```env
+VITE_RAWG_API_KEY=your_rawg_api_key_here
+
+```
+
+*(You can get a free API key at [RAWG.io](https://rawg.io/apidocs))*
+
+4. **Run the development server:**
 
 ```bash
 npm run dev
 
 ```
 
-4. **Access the App:**
+5. **Access the App:**
 
 * Open [http://localhost:5173](https://www.google.com/search?q=http://localhost:5173) in your browser.
 
